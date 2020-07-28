@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG Suite" duration-ms="61067" started-at="2020-07-28T13:47:03Z" finished-at="2020-07-28T13:48:04Z">
+    <groups>
+    </groups>
+    <test name="TestNG Test1" duration-ms="61067" started-at="2020-07-28T13:47:03Z" finished-at="2020-07-28T13:48:04Z">
+      <class name="com.CucumberRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.CucumberRunner@402c4085]" name="setUpClass" is-config="true" duration-ms="373" started-at="2020-07-28T19:17:03Z" finished-at="2020-07-28T19:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner@402c4085]" name="setTestName" is-config="true" duration-ms="3" started-at="2020-07-28T19:17:04Z" finished-at="2020-07-28T19:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6999cd39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner@402c4085]" name="scenario" duration-ms="41910" started-at="2020-07-28T19:17:04Z" data-provider="scenarios" finished-at="2020-07-28T19:17:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To do a fund transfer in ParasBank Site"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ParasBank]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='button']"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAVBCP733', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\HARIHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4deb66791baf0298e6853b9fb4896aa3
+*** Element info: {Using=xpath, value=//input[@class='button']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='button']"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAVBCP733', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\HARIHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4deb66791baf0298e6853b9fb4896aa3
+*** Element info: {Using=xpath, value=//input[@class='button']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.internetapp.pages.ParasBankBDD.I_Select_the_Account_Type(ParasBankBDD.java:230)
+	at ✽.I Select the Account Type "SAVINGS" and Click Open new accountButton(file:///C:/Users/HARIHARAVIGNESHM/eclipse-workspace/Rutukanta/NewTAFUpdated/./src/test/resources/features/ParasBank.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner@402c4085]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-07-28T19:17:47Z" finished-at="2020-07-28T19:17:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=To do a fund transfer in ParasBank Site status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner@402c4085] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner@402c4085]" name="scenario" duration-ms="9059" started-at="2020-07-28T19:17:47Z" data-provider="scenarios" finished-at="2020-07-28T19:17:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To do a fund transfer in ParasBank Site"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ParasBank]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAVBCP733', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\HARIHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cbc6be4d0cfcc6bbe43c49d7c79a03ed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAVBCP733', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\HARIHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cbc6be4d0cfcc6bbe43c49d7c79a03ed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at com.internetapp.pages.ParasBankBDD.I_Launch_the_parasBank_Site(ParasBankBDD.java:107)
+	at ✽.I Launch the parasBank Site(file:///C:/Users/HARIHARAVIGNESHM/eclipse-workspace/Rutukanta/NewTAFUpdated/./src/test/resources/features/ParasBank.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner@402c4085]" name="setTestName" is-config="true" duration-ms="0" started-at="2020-07-28T19:17:47Z" finished-at="2020-07-28T19:17:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@14bae047]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner@402c4085]" name="afterMethod" is-config="true" duration-ms="4" started-at="2020-07-28T19:17:56Z" finished-at="2020-07-28T19:17:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=To do a fund transfer in ParasBank Site status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner@402c4085] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner@402c4085]" name="setTestName" is-config="true" duration-ms="6" started-at="2020-07-28T19:17:56Z" finished-at="2020-07-28T19:17:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7ed9ae94]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner@402c4085]" name="scenario" duration-ms="7845" started-at="2020-07-28T19:17:56Z" data-provider="scenarios" finished-at="2020-07-28T19:18:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To do a fund transfer in ParasBank Site"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ParasBank]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from chrome not reachable
+  (Session info: chrome=84.0.4147.105)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAVBCP733', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011E87E3+2852835]
+	Ordinal0 [0x010D5BB1+1727409]
+	Ordinal0 [0x00FAE362+516962]
+	Ordinal0 [0x00FA7D82+490882]
+	Ordinal0 [0x00FA846B+492651]
+	Ordinal0 [0x00FA93C5+496581]
+	Ordinal0 [0x00FA4D64+478564]
+	Ordinal0 [0x00FAF300+520960]
+	Ordinal0 [0x00F5E489+189577]
+	Ordinal0 [0x00F5D7FD+186365]
+	Ordinal0 [0x00F5B70B+177931]
+	Ordinal0 [0x00F42584+75140]
+	Ordinal0 [0x00F43650+79440]
+	Ordinal0 [0x00F435E9+79337]
+	Ordinal0 [0x010EAD5C+1813852]
+	GetHandleVerifier [0x0130C616+1075574]
+	GetHandleVerifier [0x0130C367+1074887]
+	GetHandleVerifier [0x01317497+1120247]
+	GetHandleVerifier [0x0130CC16+1077110]
+	Ordinal0 [0x010E3206+1782278]
+	Ordinal0 [0x010EC3BB+1819579]
+	Ordinal0 [0x010EC523+1819939]
+	Ordinal0 [0x01102B45+1911621]
+	BaseThreadInitThunk [0x76B56359+25]
+	RtlGetAppContainerNamedObjectPath [0x77B17C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77B17BF4+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=84.0.4147.105)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAVBCP733', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011E87E3+2852835]
+	Ordinal0 [0x010D5BB1+1727409]
+	Ordinal0 [0x00FAE362+516962]
+	Ordinal0 [0x00FA7D82+490882]
+	Ordinal0 [0x00FA846B+492651]
+	Ordinal0 [0x00FA93C5+496581]
+	Ordinal0 [0x00FA4D64+478564]
+	Ordinal0 [0x00FAF300+520960]
+	Ordinal0 [0x00F5E489+189577]
+	Ordinal0 [0x00F5D7FD+186365]
+	Ordinal0 [0x00F5B70B+177931]
+	Ordinal0 [0x00F42584+75140]
+	Ordinal0 [0x00F43650+79440]
+	Ordinal0 [0x00F435E9+79337]
+	Ordinal0 [0x010EAD5C+1813852]
+	GetHandleVerifier [0x0130C616+1075574]
+	GetHandleVerifier [0x0130C367+1074887]
+	GetHandleVerifier [0x01317497+1120247]
+	GetHandleVerifier [0x0130CC16+1077110]
+	Ordinal0 [0x010E3206+1782278]
+	Ordinal0 [0x010EC3BB+1819579]
+	Ordinal0 [0x010EC523+1819939]
+	Ordinal0 [0x01102B45+1911621]
+	BaseThreadInitThunk [0x76B56359+25]
+	RtlGetAppContainerNamedObjectPath [0x77B17C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77B17BF4+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120)
+	at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64)
+	at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54)
+	at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:566)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:644)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner@402c4085]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-07-28T19:18:04Z" finished-at="2020-07-28T19:18:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=To do a fund transfer in ParasBank Site status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner@402c4085] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.CucumberRunner@402c4085]" name="tearDownClass" is-config="true" duration-ms="100" started-at="2020-07-28T19:18:04Z" finished-at="2020-07-28T19:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.CucumberRunner -->
+    </test> <!-- TestNG Test1 -->
+  </suite> <!-- TestNG Suite -->
+</testng-results>
